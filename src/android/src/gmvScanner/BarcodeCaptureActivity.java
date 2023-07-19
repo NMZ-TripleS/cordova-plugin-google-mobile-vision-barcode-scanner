@@ -160,7 +160,7 @@ public final class BarcodeCaptureActivity extends AppCompatActivity
     AlertDialog.Builder builder = new AlertDialog.Builder(this);
     builder.setTitle("Camera permission required")
         .setMessage(getResources().getIdentifier("no_camera_permission", "string", getPackageName()))
-        .setPositiveButton(getResources().getIdentifier("ok", "string", getPackageName()), listener).show();
+        .setPositiveButton(getResources().getIdentifier("barcode_ok", "string", getPackageName()), listener).show();
   }
 
   @Override
@@ -284,7 +284,7 @@ public final class BarcodeCaptureActivity extends AppCompatActivity
     Snackbar
         .make(_GraphicOverlay, getResources().getIdentifier("permission_camera_rationale", "string", getPackageName()),
             Snackbar.LENGTH_INDEFINITE)
-        .setAction(getResources().getIdentifier("ok", "string", getPackageName()), listener).show();
+        .setAction(getResources().getIdentifier("barcode_ok", "string", getPackageName()), listener).show();
   }
 
   // ----------------------------------------------------------------------------
